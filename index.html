@@ -9,7 +9,6 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            -webkit-tap-highlight-color: transparent;
         }
 
         body {
@@ -34,7 +33,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            backdrop-filter: blur(10px);
         }
 
         .auth-container {
@@ -44,6 +42,7 @@
             width: 90%;
             max-width: 360px;
             text-align: center;
+            border: 1px solid #a855f7;
         }
 
         .auth-container h1 {
@@ -52,12 +51,6 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             margin-bottom: 8px;
-        }
-
-        .auth-container p {
-            color: #888;
-            margin-bottom: 24px;
-            font-size: 14px;
         }
 
         .auth-input {
@@ -72,9 +65,7 @@
             outline: none;
         }
 
-        .auth-input:focus {
-            border-color: #a855f7;
-        }
+        .auth-input:focus { border-color: #a855f7; }
 
         .auth-btn {
             width: 100%;
@@ -87,11 +78,6 @@
             font-size: 16px;
             cursor: pointer;
             margin-top: 8px;
-            transition: opacity 0.2s;
-        }
-
-        .auth-btn:active {
-            opacity: 0.8;
         }
 
         .auth-switch {
@@ -109,14 +95,8 @@
             font-size: 12px;
             margin-top: 12px;
         }
-
-        .auth-message.error {
-            color: #ff5555;
-        }
-
-        .auth-message.success {
-            color: #4ade80;
-        }
+        .auth-message.error { color: #ff5555; }
+        .auth-message.success { color: #4ade80; }
 
         /* ОСНОВНОЕ ПРИЛОЖЕНИЕ */
         .app-container {
@@ -150,11 +130,6 @@
             font-size: 14px;
             padding: 6px 12px;
             border-radius: 20px;
-            transition: all 0.2s;
-        }
-
-        .logout-btn:active {
-            background: #2a2a2a;
         }
 
         .header {
@@ -165,8 +140,7 @@
         }
 
         .header h1 {
-            font-size: 26px;
-            font-weight: 700;
+            font-size: 28px;
             background: linear-gradient(135deg, #fff, #a855f7);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -180,35 +154,28 @@
 
         .nav {
             display: flex;
-            gap: 6px;
+            gap: 8px;
             padding: 10px 12px;
             background: #0f0f0f;
             border-bottom: 1px solid #2a2a2a;
             overflow-x: auto;
             flex-shrink: 0;
-            scrollbar-width: thin;
         }
 
         .nav-btn {
-            padding: 8px 14px;
+            padding: 8px 16px;
             background: #1a1a1a;
             border: none;
             border-radius: 30px;
             color: #888;
-            font-size: 12px;
+            font-size: 13px;
             cursor: pointer;
-            transition: all 0.2s;
             white-space: nowrap;
-            flex-shrink: 0;
         }
 
         .nav-btn.active {
             background: #a855f7;
             color: white;
-        }
-
-        .nav-btn:active {
-            transform: scale(0.96);
         }
 
         .main-content {
@@ -217,7 +184,6 @@
             padding: 12px;
         }
 
-        /* Общие стили */
         .module-title {
             font-size: 18px;
             font-weight: 600;
@@ -227,31 +193,19 @@
         .add-btn {
             background: #a855f7;
             border: none;
-            padding: 10px 16px;
+            padding: 12px;
             border-radius: 30px;
             color: white;
             font-weight: 600;
-            font-size: 13px;
-            cursor: pointer;
-            margin-bottom: 12px;
+            margin-bottom: 16px;
             width: 100%;
-            transition: opacity 0.2s;
-        }
-
-        .add-btn:active {
-            opacity: 0.8;
+            cursor: pointer;
         }
 
         .empty-state {
             text-align: center;
             padding: 40px 20px;
             color: #666;
-        }
-
-        .empty-state h3 {
-            font-size: 18px;
-            margin-bottom: 8px;
-            color: #888;
         }
 
         /* Чат */
@@ -274,32 +228,17 @@
             max-width: 85%;
             padding: 10px 14px;
             border-radius: 18px;
-            line-height: 1.4;
             font-size: 14px;
         }
 
         .user-message {
             background: #a855f7;
-            color: white;
             align-self: flex-end;
-            border-bottom-right-radius: 4px;
         }
 
         .bot-message {
             background: #1f1f1f;
-            color: #e0e0e0;
             align-self: flex-start;
-            border-bottom-left-radius: 4px;
-        }
-
-        .typing {
-            background: #1f1f1f;
-            color: #888;
-            align-self: flex-start;
-            padding: 10px 14px;
-            border-radius: 18px;
-            font-style: italic;
-            font-size: 13px;
         }
 
         .input-area {
@@ -317,12 +256,8 @@
             border: 1px solid #2a2a2a;
             border-radius: 30px;
             color: white;
-            font-size: 15px;
+            font-size: 14px;
             outline: none;
-        }
-
-        .input-area input:focus {
-            border-color: #a855f7;
         }
 
         .input-area button {
@@ -357,13 +292,10 @@
             border: none;
             color: white;
             font-size: 18px;
-            cursor: pointer;
             width: 36px;
             height: 36px;
             border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            cursor: pointer;
         }
 
         .url-bar {
@@ -371,7 +303,7 @@
             background: #0a0a0a;
             border: 1px solid #2a2a2a;
             border-radius: 30px;
-            padding: 10px 14px;
+            padding: 8px 14px;
             color: white;
             font-size: 13px;
             outline: none;
@@ -380,11 +312,10 @@
         .go-btn {
             background: #a855f7;
             border: none;
-            color: white;
             padding: 8px 16px;
             border-radius: 30px;
+            color: white;
             cursor: pointer;
-            font-size: 13px;
         }
 
         .browser-frame {
@@ -401,17 +332,8 @@
             border: none;
         }
 
-        /* Видео и Shorts */
-        .feed-container {
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-
+        /* Видео карточки */
         .feed {
-            flex: 1;
-            overflow-y: auto;
             display: flex;
             flex-direction: column;
             gap: 16px;
@@ -425,17 +347,16 @@
 
         .video-preview {
             width: 100%;
-            background: #0a0a0a;
+            background: #000;
+            min-height: 200px;
             display: flex;
             align-items: center;
             justify-content: center;
-            min-height: 200px;
         }
 
         .video-preview video {
             width: 100%;
             max-height: 300px;
-            background: black;
         }
 
         .video-info {
@@ -451,25 +372,10 @@
         .video-author {
             font-size: 12px;
             color: #a855f7;
-            margin-bottom: 6px;
-        }
-
-        .video-desc {
-            font-size: 12px;
-            color: #aaa;
         }
 
         /* Заметки */
-        .notes-container {
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-            gap: 12px;
-        }
-
         .notes-list {
-            flex: 1;
-            overflow-y: auto;
             display: flex;
             flex-direction: column;
             gap: 10px;
@@ -483,7 +389,6 @@
         }
 
         .note-title {
-            font-size: 15px;
             font-weight: 600;
             margin-bottom: 6px;
         }
@@ -491,9 +396,9 @@
         .note-content {
             font-size: 13px;
             color: #888;
+            white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            white-space: nowrap;
         }
 
         .note-date {
@@ -503,19 +408,13 @@
         }
 
         /* Музыка */
-        .music-container {
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-            gap: 16px;
-        }
-
         .music-player {
             background: linear-gradient(135deg, #1a1a1a, #0f0f0f);
             border-radius: 28px;
             padding: 20px;
             text-align: center;
-            border: 1px solid rgba(168, 85, 247, 0.3);
+            margin-bottom: 16px;
+            border: 1px solid #a855f7;
         }
 
         .album-art {
@@ -533,20 +432,18 @@
         .current-track {
             font-size: 18px;
             font-weight: 700;
-            margin-bottom: 4px;
         }
 
         .current-artist {
             color: #a855f7;
             font-size: 13px;
-            margin-bottom: 16px;
+            margin: 4px 0 16px;
         }
 
         .player-controls {
             display: flex;
             justify-content: center;
             gap: 20px;
-            margin: 12px 0;
         }
 
         .player-btn {
@@ -562,36 +459,26 @@
 
         .player-btn:active {
             background: #a855f7;
-            transform: scale(0.96);
         }
 
         .music-list {
-            flex: 1;
+            max-height: 300px;
             overflow-y: auto;
-            background: #1a1a1a;
-            border-radius: 20px;
-            padding: 12px;
         }
 
         .music-track {
-            background: #0f0f0f;
+            background: #1a1a1a;
             border-radius: 14px;
             padding: 12px;
             margin-bottom: 8px;
             cursor: pointer;
             display: flex;
             justify-content: space-between;
-            align-items: center;
-        }
-
-        .music-track:active {
-            background: #2a2a2a;
         }
 
         .track-title {
             font-weight: 600;
             font-size: 14px;
-            margin-bottom: 2px;
         }
 
         .track-artist {
@@ -599,19 +486,19 @@
             color: #888;
         }
 
-        /* Мессенджер */
+        /* Мессенджер как Telegram */
         .messenger-container {
             display: flex;
             flex-direction: column;
             height: 100%;
             background: #0f0f0f;
-            border-radius: 20px;
+            border-radius: 24px;
             overflow: hidden;
         }
 
         .chat-users {
             background: #1a1a1a;
-            padding: 10px 12px;
+            padding: 12px;
             border-bottom: 1px solid #2a2a2a;
             display: flex;
             gap: 8px;
@@ -619,11 +506,11 @@
         }
 
         .chat-user {
-            padding: 6px 14px;
+            padding: 8px 16px;
             background: #0a0a0a;
             border-radius: 30px;
             cursor: pointer;
-            font-size: 13px;
+            font-size: 14px;
             white-space: nowrap;
         }
 
@@ -638,11 +525,11 @@
             padding: 12px;
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 8px;
         }
 
         .chat-message-bubble {
-            max-width: 80%;
+            max-width: 75%;
             padding: 8px 12px;
             border-radius: 16px;
             font-size: 13px;
@@ -651,23 +538,17 @@
         .chat-message-bubble.me {
             background: #a855f7;
             align-self: flex-end;
-            border-bottom-right-radius: 4px;
         }
 
         .chat-message-bubble.friend {
             background: #1a1a1a;
             align-self: flex-start;
-            border-bottom-left-radius: 4px;
         }
 
         .chat-message-sender {
             font-size: 10px;
             color: #888;
             margin-bottom: 4px;
-        }
-
-        .chat-message-text {
-            word-break: break-word;
         }
 
         .chat-message-time {
@@ -703,7 +584,6 @@
             border-radius: 30px;
             color: white;
             cursor: pointer;
-            font-size: 13px;
         }
 
         /* Модалки */
@@ -734,7 +614,6 @@
 
         .modal-content h3 {
             margin-bottom: 16px;
-            font-size: 18px;
         }
 
         .modal-content input, .modal-content textarea {
@@ -745,7 +624,6 @@
             border: 1px solid #2a2a2a;
             border-radius: 12px;
             color: white;
-            font-size: 14px;
         }
 
         .file-input {
@@ -753,9 +631,8 @@
             padding: 12px;
             border-radius: 12px;
             margin-bottom: 12px;
-            border: 1px dashed #2a2a2a;
+            border: 1px dashed #a855f7;
             text-align: center;
-            font-size: 13px;
         }
 
         .modal-buttons {
@@ -769,7 +646,6 @@
             padding: 12px;
             border-radius: 30px;
             cursor: pointer;
-            font-weight: 600;
             border: none;
         }
 
@@ -796,7 +672,7 @@
         </div>
         <div class="header">
             <h1>ALL</h1>
-            <p>Чат • Браузер • Видео • Заметки • Музыка • Мессенджер</p>
+            <p>Чат • Браузер • Shorts • Видео • Заметки • Музыка • Мессенджер</p>
         </div>
         <div class="nav">
             <button class="nav-btn active" data-module="chat">🤖 Чат</button>
@@ -808,17 +684,13 @@
             <button class="nav-btn" data-module="messenger">💬 Мессенджер</button>
         </div>
         <div class="main-content">
-            <!-- Чат с Элли -->
+            <!-- Чат -->
             <div id="chat-module" class="chat-container">
                 <div class="messages" id="messages">
-                    <div class="message bot-message">
-                        💜 Привет! Я Элли — твой помощник.<br>
-                        📍 Решаю примеры, говорю погоду, ищу информацию.<br>
-                        Просто спроси меня!
-                    </div>
+                    <div class="message bot-message">💜 Привет! Я Элли. Решаю примеры, говорю погоду, ищу информацию. Просто спроси!</div>
                 </div>
                 <div class="input-area">
-                    <input type="text" id="userInput" placeholder="Напиши сообщение..." autocomplete="off">
+                    <input type="text" id="userInput" placeholder="Напиши сообщение...">
                     <button id="sendBtn">➤</button>
                 </div>
             </div>
@@ -837,14 +709,14 @@
             </div>
 
             <!-- Shorts -->
-            <div id="shorts-module" class="feed-container hidden">
+            <div id="shorts-module" class="feed hidden">
                 <div class="module-title">📱 Shorts</div>
                 <button class="add-btn" id="addShortsBtn">+ Добавить видео</button>
                 <div class="feed" id="shortsFeed"></div>
             </div>
 
             <!-- Видео -->
-            <div id="video-module" class="feed-container hidden">
+            <div id="video-module" class="feed hidden">
                 <div class="module-title">🎬 Видеоплатформа</div>
                 <button class="add-btn" id="addVideoBtn">+ Добавить видео</button>
                 <div class="feed" id="videoFeed"></div>
@@ -860,7 +732,7 @@
             <!-- Музыка -->
             <div id="music-module" class="music-container hidden">
                 <div class="music-player">
-                    <div class="album-art" id="albumArt">🎵</div>
+                    <div class="album-art">🎵</div>
                     <div class="current-track" id="currentTrack">Нет трека</div>
                     <div class="current-artist" id="currentArtist"></div>
                     <audio id="audioPlayer" style="display: none;"></audio>
@@ -886,67 +758,10 @@
         </div>
 
         <!-- Модалки -->
-        <div id="noteModal" class="modal">
-            <div class="modal-content">
-                <h3>📝 Новая заметка</h3>
-                <input type="text" id="noteTitle" placeholder="Заголовок">
-                <textarea id="noteContent" rows="4" placeholder="Текст заметки..."></textarea>
-                <div class="modal-buttons">
-                    <button class="save-btn" id="saveNoteBtn">Сохранить</button>
-                    <button class="cancel-btn" id="cancelNoteBtn">Отмена</button>
-                </div>
-            </div>
-        </div>
-
-        <div id="musicModal" class="modal">
-            <div class="modal-content">
-                <h3>🎵 Добавить трек</h3>
-                <div class="file-input">
-                    📁 Выбрать аудиофайл<br>
-                    <input type="file" id="musicFile" accept="audio/*" style="margin-top: 8px;">
-                </div>
-                <input type="text" id="musicTitle" placeholder="Название трека">
-                <input type="text" id="musicArtist" placeholder="Исполнитель">
-                <div class="modal-buttons">
-                    <button class="save-btn" id="saveMusicBtn">Сохранить</button>
-                    <button class="cancel-btn" id="cancelMusicBtn">Отмена</button>
-                </div>
-            </div>
-        </div>
-
-        <div id="shortsModal" class="modal">
-            <div class="modal-content">
-                <h3>➕ Добавить видео</h3>
-                <div class="file-input">
-                    📁 Выбрать видеофайл<br>
-                    <input type="file" id="shortsFile" accept="video/*" style="margin-top: 8px;">
-                </div>
-                <input type="text" id="shortsTitle" placeholder="Название">
-                <input type="text" id="shortsAuthor" placeholder="Автор">
-                <textarea id="shortsDesc" rows="2" placeholder="Описание..."></textarea>
-                <div class="modal-buttons">
-                    <button class="save-btn" id="saveShortsBtn">Сохранить</button>
-                    <button class="cancel-btn" id="cancelShortsBtn">Отмена</button>
-                </div>
-            </div>
-        </div>
-
-        <div id="videoModal" class="modal">
-            <div class="modal-content">
-                <h3>🎬 Добавить видео</h3>
-                <div class="file-input">
-                    📁 Выбрать видеофайл<br>
-                    <input type="file" id="videoFile" accept="video/*" style="margin-top: 8px;">
-                </div>
-                <input type="text" id="videoTitle" placeholder="Название">
-                <input type="text" id="videoAuthor" placeholder="Автор">
-                <textarea id="videoDesc" rows="2" placeholder="Описание..."></textarea>
-                <div class="modal-buttons">
-                    <button class="save-btn" id="saveVideoBtn">Сохранить</button>
-                    <button class="cancel-btn" id="cancelVideoBtn">Отмена</button>
-                </div>
-            </div>
-        </div>
+        <div id="noteModal" class="modal"><div class="modal-content"><h3>📝 Новая заметка</h3><input type="text" id="noteTitle" placeholder="Заголовок"><textarea id="noteContent" rows="4" placeholder="Текст..."></textarea><div class="modal-buttons"><button class="save-btn" id="saveNoteBtn">Сохранить</button><button class="cancel-btn" id="cancelNoteBtn">Отмена</button></div></div></div>
+        <div id="musicModal" class="modal"><div class="modal-content"><h3>🎵 Добавить трек</h3><div class="file-input">📁 Выбрать аудиофайл<br><input type="file" id="musicFile" accept="audio/*"></div><input type="text" id="musicTitle" placeholder="Название"><input type="text" id="musicArtist" placeholder="Исполнитель"><div class="modal-buttons"><button class="save-btn" id="saveMusicBtn">Сохранить</button><button class="cancel-btn" id="cancelMusicBtn">Отмена</button></div></div></div>
+        <div id="shortsModal" class="modal"><div class="modal-content"><h3>➕ Добавить видео</h3><div class="file-input">📁 Выбрать видеофайл<br><input type="file" id="shortsFile" accept="video/*"></div><input type="text" id="shortsTitle" placeholder="Название"><input type="text" id="shortsAuthor" placeholder="Автор"><textarea id="shortsDesc" rows="2" placeholder="Описание"></textarea><div class="modal-buttons"><button class="save-btn" id="saveShortsBtn">Сохранить</button><button class="cancel-btn" id="cancelShortsBtn">Отмена</button></div></div></div>
+        <div id="videoModal" class="modal"><div class="modal-content"><h3>🎬 Добавить видео</h3><div class="file-input">📁 Выбрать видеофайл<br><input type="file" id="videoFile" accept="video/*"></div><input type="text" id="videoTitle" placeholder="Название"><input type="text" id="videoAuthor" placeholder="Автор"><textarea id="videoDesc" rows="2" placeholder="Описание"></textarea><div class="modal-buttons"><button class="save-btn" id="saveVideoBtn">Сохранить</button><button class="cancel-btn" id="cancelVideoBtn">Отмена</button></div></div></div>
     </div>
 
     <div id="authOverlay" class="auth-overlay">
@@ -956,113 +771,70 @@
             <input type="text" id="authLogin" class="auth-input" placeholder="Логин">
             <input type="password" id="authPassword" class="auth-input" placeholder="Пароль">
             <button class="auth-btn" id="authActionBtn">Войти</button>
-            <div class="auth-switch">
-                Нет аккаунта? <span id="toggleMode">Зарегистрироваться</span>
-            </div>
+            <div class="auth-switch">Нет аккаунта? <span id="toggleMode">Зарегистрироваться</span></div>
             <div id="authMessage" class="auth-message"></div>
         </div>
     </div>
 
     <script>
-        // ============================================================
-        // ХРАНЕНИЕ ДАННЫХ
-        // ============================================================
+        // ==================== ХРАНЕНИЕ ====================
         let currentUser = null;
         let isRegisterMode = false;
 
-        function getUsers() {
-            const users = localStorage.getItem('all_users');
-            return users ? JSON.parse(users) : [];
-        }
+        function getUsers() { return JSON.parse(localStorage.getItem('all_users') || '[]'); }
+        function saveUsers(u) { localStorage.setItem('all_users', JSON.stringify(u)); }
+        function getUserData(u, k) { return JSON.parse(localStorage.getItem(`all_${k}_${u}`) || (k === 'chats' ? '{}' : '[]')); }
+        function saveUserData(u, k, d) { localStorage.setItem(`all_${k}_${u}`, JSON.stringify(d)); }
 
-        function saveUsers(users) {
-            localStorage.setItem('all_users', JSON.stringify(users));
-        }
-
-        function getUserData(username, key) {
-            const data = localStorage.getItem(`all_${key}_${username}`);
-            if (key === 'chats') return data ? JSON.parse(data) : {};
-            return data ? JSON.parse(data) : [];
-        }
-
-        function saveUserData(username, key, data) {
-            localStorage.setItem(`all_${key}_${username}`, JSON.stringify(data));
-        }
-
-        function registerUser(login, password) {
-            const users = getUsers();
-            if (users.find(u => u.login === login)) {
-                return { success: false, message: 'Пользователь уже существует' };
-            }
-            users.push({ login, password });
+        function register(login, pass) {
+            let users = getUsers();
+            if (users.find(u => u.login === login)) return { success: false, message: 'Пользователь уже существует' };
+            users.push({ login, password: pass });
             saveUsers(users);
             return { success: true, message: 'Регистрация успешна! Теперь войдите.' };
         }
 
-        function loginUser(login, password) {
-            const users = getUsers();
-            const user = users.find(u => u.login === login && u.password === password);
-            if (user) {
-                currentUser = login;
-                localStorage.setItem('all_current_user', login);
-                return { success: true };
-            }
+        function login(login, pass) {
+            let users = getUsers();
+            let user = users.find(u => u.login === login && u.password === pass);
+            if (user) { currentUser = login; localStorage.setItem('all_current_user', login); return { success: true }; }
             return { success: false, message: 'Неверный логин или пароль' };
         }
 
-        function logoutUser() {
-            currentUser = null;
-            localStorage.removeItem('all_current_user');
-        }
+        function logout() { currentUser = null; localStorage.removeItem('all_current_user'); }
+        function checkAuth() { let saved = localStorage.getItem('all_current_user'); if (saved && getUsers().find(u => u.login === saved)) { currentUser = saved; return true; } return false; }
 
-        function checkAuth() {
-            const saved = localStorage.getItem('all_current_user');
-            if (saved && getUsers().find(u => u.login === saved)) {
-                currentUser = saved;
-                return true;
-            }
-            return false;
-        }
-
-        // ============================================================
-        // ЭЛЛИ
-        // ============================================================
-        function solveMath(expr) {
+        // ==================== ЭЛЛИ ====================
+        function solveMath(e) {
             try {
-                let e = expr.replace(/\s/g, '');
-                if (!/[+\-*/^√()]/.test(e) && !isNaN(e)) return null;
-                e = e.replace(/\^/g, '**').replace(/√(\d+)/g, 'Math.sqrt($1)');
-                let res = Function('"use strict"; return (' + e + ')')();
+                let expr = e.replace(/\s/g, '');
+                if (!/[+\-*/^√()]/.test(expr) && !isNaN(expr)) return null;
+                expr = expr.replace(/\^/g, '**').replace(/√(\d+)/g, 'Math.sqrt($1)');
+                let res = Function('"use strict"; return (' + expr + ')')();
                 if (isNaN(res) || !isFinite(res)) return null;
-                return `🧮 ${expr} = ${Math.round(res * 1000000) / 1000000}`;
+                return `🧮 ${e} = ${Math.round(res * 1000000) / 1000000}`;
             } catch(e) { return null; }
         }
 
         function getWeather(msg) {
             if (!msg.toLowerCase().includes('погода')) return null;
-            let city = msg.replace(/погода|в|на|сегодня/gi, '').trim() || 'Москве';
-            let data = { москв: '+3°C, облачно', петерб: '+1°C, снег' };
-            let weather = data[city.slice(0,4).toLowerCase()] || 'неизвестно';
-            return `🌤 Погода в ${city}: ${weather}`;
+            let city = msg.replace(/погода|в|на/gi, '').trim() || 'Москве';
+            return `🌤 Погода в ${city}: +2°C, облачно, ветер 3 м/с`;
         }
 
         function ellieReply(msg) {
             let m = msg.toLowerCase();
-            let math = solveMath(msg);
-            if (math) return math;
-            let weather = getWeather(msg);
-            if (weather) return weather;
+            let math = solveMath(msg); if (math) return math;
+            let weather = getWeather(msg); if (weather) return weather;
             if (m.includes('привет')) return `Привет, ${currentUser}! 💜 Чем могу помочь?`;
             if (m.includes('как дела')) return "У меня всё отлично! А у тебя? 😊";
-            if (m.includes('кто ты')) return "Я Элли — твой помощник в ALL. Умею решать примеры, говорить погоду, искать информацию!";
+            if (m.includes('кто ты')) return "Я Элли — твой помощник. Умею решать примеры, говорить погоду, искать информацию!";
             if (m.includes('спасибо')) return "Всегда пожалуйста! 💜";
-            if (m.includes('помощь')) return "📌 Умею: решать примеры (2+2), говорить погоду, искать в Яндексе";
+            if (m.includes('помощь')) return "📌 Умею: решать примеры (2+2), погоду, искать в Яндексе";
             return `🔍 По запросу "${msg}" смотри: https://yandex.ru/search/?text=${encodeURIComponent(msg)}`;
         }
 
-        // ============================================================
-        // ВИДЕО И SHORTS
-        // ============================================================
+        // ==================== ВИДЕО ====================
         let shorts = [], videos = [];
 
         function renderShorts() {
@@ -1070,21 +842,11 @@
             if (!feed) return;
             shorts = getUserData(currentUser, 'shorts');
             feed.innerHTML = '';
-            if (!shorts.length) {
-                feed.innerHTML = '<div class="empty-state"><h3>📱 Нет видео</h3><p>Нажми + Добавить видео</p></div>';
-                return;
-            }
+            if (!shorts.length) { feed.innerHTML = '<div class="empty-state"><h3>📱 Нет видео</h3><p>Нажми + Добавить видео</p></div>'; return; }
             shorts.forEach(v => {
                 let div = document.createElement('div');
                 div.className = 'video-card';
-                div.innerHTML = `
-                    <div class="video-preview"><video controls src="${v.dataUrl}" style="width:100%"></video></div>
-                    <div class="video-info">
-                        <div class="video-title">${escapeHtml(v.title)}</div>
-                        <div class="video-author">📺 ${escapeHtml(v.author)}</div>
-                        <div class="video-desc">${escapeHtml(v.desc || '')}</div>
-                    </div>
-                `;
+                div.innerHTML = `<div class="video-preview"><video controls src="${v.dataUrl}" style="width:100%"></video></div><div class="video-info"><div class="video-title">${escapeHtml(v.title)}</div><div class="video-author">📺 ${escapeHtml(v.author)}</div><div class="video-desc" style="font-size:12px;color:#888;">${escapeHtml(v.desc || '')}</div></div>`;
                 feed.appendChild(div);
             });
         }
@@ -1094,102 +856,54 @@
             if (!feed) return;
             videos = getUserData(currentUser, 'videos');
             feed.innerHTML = '';
-            if (!videos.length) {
-                feed.innerHTML = '<div class="empty-state"><h3>🎬 Нет видео</h3><p>Нажми + Добавить видео</p></div>';
-                return;
-            }
+            if (!videos.length) { feed.innerHTML = '<div class="empty-state"><h3>🎬 Нет видео</h3><p>Нажми + Добавить видео</p></div>'; return; }
             videos.forEach(v => {
                 let div = document.createElement('div');
                 div.className = 'video-card';
-                div.innerHTML = `
-                    <div class="video-preview"><video controls src="${v.dataUrl}" style="width:100%"></video></div>
-                    <div class="video-info">
-                        <div class="video-title">${escapeHtml(v.title)}</div>
-                        <div class="video-author">🎥 ${escapeHtml(v.author)}</div>
-                        <div class="video-desc">${escapeHtml(v.desc || '')}</div>
-                    </div>
-                `;
+                div.innerHTML = `<div class="video-preview"><video controls src="${v.dataUrl}" style="width:100%"></video></div><div class="video-info"><div class="video-title">${escapeHtml(v.title)}</div><div class="video-author">🎥 ${escapeHtml(v.author)}</div><div class="video-desc" style="font-size:12px;color:#888;">${escapeHtml(v.desc || '')}</div></div>`;
                 feed.appendChild(div);
             });
         }
 
-        // ============================================================
-        // ЗАМЕТКИ
-        // ============================================================
+        // ==================== ЗАМЕТКИ ====================
         let notes = [];
-
         function renderNotes() {
             let list = document.getElementById('notesList');
             if (!list) return;
             notes = getUserData(currentUser, 'notes');
             list.innerHTML = '';
-            if (!notes.length) {
-                list.innerHTML = '<div class="empty-state"><h3>📝 Нет заметок</h3><p>Нажми + Новая заметка</p></div>';
-                return;
-            }
+            if (!notes.length) { list.innerHTML = '<div class="empty-state"><h3>📝 Нет заметок</h3><p>Нажми + Новая заметка</p></div>'; return; }
             notes.forEach((n, i) => {
                 let div = document.createElement('div');
                 div.className = 'note-item';
-                div.innerHTML = `
-                    <div class="note-title">${escapeHtml(n.title)}</div>
-                    <div class="note-content">${escapeHtml(n.content.substring(0, 80))}</div>
-                    <div class="note-date">${n.date}</div>
-                `;
-                div.onclick = () => {
-                    let newTitle = prompt('Изменить заголовок:', n.title);
-                    if (newTitle !== null) {
-                        let newContent = prompt('Изменить текст:', n.content);
-                        if (newContent !== null) {
-                            notes[i].title = newTitle;
-                            notes[i].content = newContent;
-                            saveUserData(currentUser, 'notes', notes);
-                            renderNotes();
-                        }
-                    }
-                };
+                div.innerHTML = `<div class="note-title">${escapeHtml(n.title)}</div><div class="note-content">${escapeHtml(n.content.substring(0, 80))}</div><div class="note-date">${n.date}</div>`;
+                div.onclick = () => { let t = prompt('Изменить заголовок:', n.title); if (t) { let c = prompt('Изменить текст:', n.content); if (c) { notes[i] = { ...n, title: t, content: c }; saveUserData(currentUser, 'notes', notes); renderNotes(); } } };
                 list.appendChild(div);
             });
         }
+        function addNote(t, c) { notes.unshift({ id: Date.now(), title: t, content: c, date: new Date().toLocaleString() }); saveUserData(currentUser, 'notes', notes); renderNotes(); }
 
-        function addNote(title, content) {
-            notes.unshift({ id: Date.now(), title, content, date: new Date().toLocaleString() });
-            saveUserData(currentUser, 'notes', notes);
-            renderNotes();
-        }
-
-        // ============================================================
-        // МУЗЫКА
-        // ============================================================
-        let musicList = [];
-        let currentTrack = 0;
-        let isPlaying = false;
+        // ==================== МУЗЫКА ====================
+        let musicList = [], currentTrackIdx = 0, isPlaying = false;
         const audio = document.getElementById('audioPlayer');
-
         function renderMusic() {
             let list = document.getElementById('musicList');
             if (!list) return;
             musicList = getUserData(currentUser, 'music');
             list.innerHTML = '';
-            if (!musicList.length) {
-                list.innerHTML = '<div class="empty-state"><h3>🎵 Нет треков</h3><p>Нажми + Добавить трек</p></div>';
-                return;
-            }
+            if (!musicList.length) { list.innerHTML = '<div class="empty-state"><h3>🎵 Нет треков</h3><p>Нажми + Добавить трек</p></div>'; return; }
             musicList.forEach((t, i) => {
                 let div = document.createElement('div');
                 div.className = 'music-track';
-                div.innerHTML = `
-                    <div><div class="track-title">${escapeHtml(t.title)}</div><div class="track-artist">${escapeHtml(t.artist)}</div></div>
-                    <div>🎵</div>
-                `;
+                div.innerHTML = `<div><div class="track-title">${escapeHtml(t.title)}</div><div class="track-artist">${escapeHtml(t.artist)}</div></div><div>🎵</div>`;
                 div.onclick = () => playTrack(i);
                 list.appendChild(div);
             });
         }
-
-        function playTrack(index) {
-            if (index < 0 || index >= musicList.length) return;
-            currentTrack = index;
-            let t = musicList[currentTrack];
+        function playTrack(i) {
+            if (i < 0 || i >= musicList.length) return;
+            currentTrackIdx = i;
+            let t = musicList[currentTrackIdx];
             document.getElementById('currentTrack').innerText = t.title;
             document.getElementById('currentArtist').innerText = t.artist;
             audio.src = t.dataUrl;
@@ -1198,34 +912,20 @@
             isPlaying = true;
             document.getElementById('playPauseBtn').innerText = '⏸';
         }
-
         function addMusicTrack(file, title, artist) {
             let reader = new FileReader();
-            reader.onload = e => {
-                musicList.push({ id: Date.now(), title, artist: artist || 'Неизвестен', dataUrl: e.target.result });
-                saveUserData(currentUser, 'music', musicList);
-                renderMusic();
-                alert('✅ Трек добавлен!');
-            };
+            reader.onload = e => { musicList.push({ id: Date.now(), title, artist: artist || 'Неизвестен', dataUrl: e.target.result }); saveUserData(currentUser, 'music', musicList); renderMusic(); alert('✅ Трек добавлен!'); };
             reader.readAsDataURL(file);
         }
 
-        // ============================================================
-        // МЕССЕНДЖЕР
-        // ============================================================
-        let allUsers = [];
-        let currentChat = null;
-        let chats = {};
-
+        // ==================== МЕССЕНДЖЕР ====================
+        let allUsers = [], currentChat = null, chats = {};
         function loadChatUsers() {
             allUsers = getUsers().map(u => u.login).filter(u => u !== currentUser);
             let container = document.getElementById('chatUsers');
             if (!container) return;
             container.innerHTML = '';
-            if (!allUsers.length) {
-                container.innerHTML = '<div style="color:#888; padding:8px;">Нет других пользователей</div>';
-                return;
-            }
+            if (!allUsers.length) { container.innerHTML = '<div style="color:#888; padding:8px;">Нет других пользователей</div>'; return; }
             allUsers.forEach(u => {
                 let btn = document.createElement('div');
                 btn.className = `chat-user ${currentChat === u ? 'active' : ''}`;
@@ -1234,283 +934,119 @@
                 container.appendChild(btn);
             });
         }
-
-        function renderChatUsers() {
-            let btns = document.querySelectorAll('.chat-user');
-            btns.forEach(btn => {
-                if (btn.innerText === currentChat) btn.classList.add('active');
-                else btn.classList.remove('active');
-            });
-        }
-
+        function renderChatUsers() { document.querySelectorAll('.chat-user').forEach(btn => { if (btn.innerText === currentChat) btn.classList.add('active'); else btn.classList.remove('active'); }); }
         function renderChatMessages() {
             let area = document.getElementById('chatMessagesArea');
             if (!area || !currentChat) return;
             chats = getUserData(currentUser, 'chats');
             let msgs = chats[currentChat] || [];
             area.innerHTML = '';
-            if (!msgs.length) {
-                area.innerHTML = '<div class="empty-state"><h3>💬 Нет сообщений</h3><p>Напишите что-нибудь</p></div>';
-                return;
-            }
+            if (!msgs.length) { area.innerHTML = '<div class="empty-state"><h3>💬 Нет сообщений</h3><p>Напишите что-нибудь</p></div>'; return; }
             msgs.forEach(m => {
                 let div = document.createElement('div');
                 div.className = `chat-message-bubble ${m.sender === currentUser ? 'me' : 'friend'}`;
-                div.innerHTML = `
-                    <div class="chat-message-sender">${m.sender === currentUser ? 'Вы' : m.sender}</div>
-                    <div class="chat-message-text">${escapeHtml(m.text)}</div>
-                    <div class="chat-message-time">${m.time}</div>
-                `;
+                div.innerHTML = `<div class="chat-message-sender">${m.sender === currentUser ? 'Вы' : m.sender}</div><div class="chat-message-text">${escapeHtml(m.text)}</div><div class="chat-message-time">${m.time}</div>`;
                 area.appendChild(div);
             });
             area.scrollTop = area.scrollHeight;
         }
-
         function sendChatMessage(text) {
-            if (!text.trim() || !currentChat) {
-                if (!currentChat) alert('Выберите собеседника');
-                return;
-            }
+            if (!text.trim() || !currentChat) { if (!currentChat) alert('Выберите собеседника'); return; }
             chats = getUserData(currentUser, 'chats');
             if (!chats[currentChat]) chats[currentChat] = [];
-            chats[currentChat].push({
-                id: Date.now(),
-                sender: currentUser,
-                text: text.trim(),
-                time: new Date().toLocaleTimeString()
-            });
+            chats[currentChat].push({ id: Date.now(), sender: currentUser, text: text.trim(), time: new Date().toLocaleTimeString() });
             saveUserData(currentUser, 'chats', chats);
             renderChatMessages();
         }
 
-        // ============================================================
-        // БРАУЗЕР
-        // ============================================================
+        // ==================== БРАУЗЕР ====================
         function initBrowser() {
             let iframe = document.getElementById('browserIframe');
-            let urlInput = document.getElementById('urlInput');
+            let urlInp = document.getElementById('urlInput');
             let go = document.getElementById('goBtn');
             let back = document.getElementById('backBtn');
             let forward = document.getElementById('forwardBtn');
-            let history = ['https://yandex.ru'];
-            let idx = 0;
-
-            function load(u) {
-                let url = u.trim();
-                if (!url.startsWith('http')) url = 'https://' + url;
-                iframe.src = url;
-                urlInput.value = url;
-                history = history.slice(0, idx + 1);
-                history.push(url);
-                idx++;
-            }
-
-            go.onclick = () => load(urlInput.value);
-            urlInput.onkeypress = e => { if (e.key === 'Enter') load(urlInput.value); };
-            back.onclick = () => { if (idx > 0) { idx--; iframe.src = history[idx]; urlInput.value = history[idx]; } };
-            forward.onclick = () => { if (idx < history.length - 1) { idx++; iframe.src = history[idx]; urlInput.value = history[idx]; } };
+            let history = ['https://yandex.ru'], idx = 0;
+            function load(u) { let url = u.trim(); if (!url.startsWith('http')) url = 'https://' + url; iframe.src = url; urlInp.value = url; history = history.slice(0, idx + 1); history.push(url); idx++; }
+            go.onclick = () => load(urlInp.value);
+            urlInp.onkeypress = e => { if (e.key === 'Enter') load(urlInp.value); };
+            back.onclick = () => { if (idx > 0) { idx--; iframe.src = history[idx]; urlInp.value = history[idx]; } };
+            forward.onclick = () => { if (idx < history.length - 1) { idx++; iframe.src = history[idx]; urlInp.value = history[idx]; } };
             iframe.src = 'https://yandex.ru';
         }
 
-        // ============================================================
-        // ОБЩЕЕ
-        // ============================================================
-        function escapeHtml(s) { return s ? s.replace(/[&<>]/g, function(m) { return m === '&' ? '&amp;' : m === '<' ? '&lt;' : '&gt;'; }) : ''; }
+        // ==================== ОБЩЕЕ ====================
+        function escapeHtml(s) { return s ? s.replace(/[&<>]/g, m => m === '&' ? '&amp;' : m === '<' ? '&lt;' : '&gt;') : ''; }
 
         function initApp() {
             document.getElementById('userNameDisplay').innerText = `👤 ${currentUser}`;
             document.getElementById('appContainer').classList.remove('hidden');
             document.getElementById('authOverlay').style.display = 'none';
+            renderShorts(); renderVideos(); renderNotes(); renderMusic(); loadChatUsers(); renderChatMessages(); initBrowser();
 
-            renderShorts();
-            renderVideos();
-            renderNotes();
-            renderMusic();
-            loadChatUsers();
-            renderChatMessages();
-            initBrowser();
+            let msgsDiv = document.getElementById('messages'), inp = document.getElementById('userInput'), send = document.getElementById('sendBtn');
+            function addMsg(t, isUser) { let div = document.createElement('div'); div.className = `message ${isUser ? 'user-message' : 'bot-message'}`; div.innerHTML = t.replace(/\n/g, '<br>'); msgsDiv.appendChild(div); msgsDiv.scrollTop = msgsDiv.scrollHeight; }
+            function sendMsg() { let msg = inp.value.trim(); if (!msg) return; addMsg(msg, true); inp.value = ''; setTimeout(() => addMsg(ellieReply(msg), false), 300); }
+            send.onclick = sendMsg; inp.onkeypress = e => { if (e.key === 'Enter') sendMsg(); };
 
-            // Чат с Элли
-            let msgsDiv = document.getElementById('messages');
-            let inp = document.getElementById('userInput');
-            let send = document.getElementById('sendBtn');
-
-            function addMsg(text, isUser) {
-                let div = document.createElement('div');
-                div.className = `message ${isUser ? 'user-message' : 'bot-message'}`;
-                div.innerHTML = text.replace(/\n/g, '<br>');
-                msgsDiv.appendChild(div);
-                msgsDiv.scrollTop = msgsDiv.scrollHeight;
-            }
-
-            function showTyping() {
-                let t = document.createElement('div');
-                t.className = 'typing';
-                t.id = 'typing';
-                t.innerText = 'Элли печатает...';
-                msgsDiv.appendChild(t);
-                msgsDiv.scrollTop = msgsDiv.scrollHeight;
-            }
-
-            function removeTyping() {
-                let t = document.getElementById('typing');
-                if (t) t.remove();
-            }
-
-            function sendMsg() {
-                let msg = inp.value.trim();
-                if (!msg) return;
-                addMsg(msg, true);
-                inp.value = '';
-                showTyping();
-                setTimeout(() => {
-                    removeTyping();
-                    addMsg(ellieReply(msg), false);
-                }, 400);
-            }
-
-            send.onclick = sendMsg;
-            inp.onkeypress = e => { if (e.key === 'Enter') sendMsg(); };
-
-            // Мессенджер
-            let chatInp = document.getElementById('chatInput');
-            let chatSend = document.getElementById('sendChatBtn');
+            let chatInp = document.getElementById('chatInput'), chatSend = document.getElementById('sendChatBtn');
             chatSend.onclick = () => { sendChatMessage(chatInp.value); chatInp.value = ''; };
             chatInp.onkeypress = e => { if (e.key === 'Enter') { sendChatMessage(chatInp.value); chatInp.value = ''; } };
 
-            // Музыка плеер
-            let playPause = document.getElementById('playPauseBtn');
-            let prevBtn = document.getElementById('prevTrackBtn');
-            let nextBtn = document.getElementById('nextTrackBtn');
+            let playPause = document.getElementById('playPauseBtn'), prev = document.getElementById('prevTrackBtn'), next = document.getElementById('nextTrackBtn');
             audio.onplay = () => { isPlaying = true; playPause.innerText = '⏸'; };
             audio.onpause = () => { isPlaying = false; playPause.innerText = '▶'; };
             playPause.onclick = () => { if (isPlaying) audio.pause(); else audio.play(); };
-            prevBtn.onclick = () => { if (musicList.length) playTrack((currentTrack - 1 + musicList.length) % musicList.length); };
-            nextBtn.onclick = () => { if (musicList.length) playTrack((currentTrack + 1) % musicList.length); };
+            prev.onclick = () => { if (musicList.length) playTrack((currentTrackIdx - 1 + musicList.length) % musicList.length); };
+            next.onclick = () => { if (musicList.length) playTrack((currentTrackIdx + 1) % musicList.length); };
         }
 
-        // ============================================================
-        // АВТОРИЗАЦИЯ
-        // ============================================================
+        // ==================== АВТОРИЗАЦИЯ ====================
         let authDiv = document.getElementById('authOverlay');
-        let authLogin = document.getElementById('authLogin');
-        let authPass = document.getElementById('authPassword');
-        let authBtn = document.getElementById('authActionBtn');
-        let authMsg = document.getElementById('authMessage');
-
-        function updateAuthUI() {
-            authBtn.innerText = isRegisterMode ? 'Зарегистрироваться' : 'Войти';
-            document.getElementById('toggleMode').innerText = isRegisterMode ? 'Войти' : 'Зарегистрироваться';
-        }
-
+        let authLogin = document.getElementById('authLogin'), authPass = document.getElementById('authPassword'), authBtn = document.getElementById('authActionBtn'), authMsg = document.getElementById('authMessage');
+        function updateAuthUI() { authBtn.innerText = isRegisterMode ? 'Зарегистрироваться' : 'Войти'; document.getElementById('toggleMode').innerText = isRegisterMode ? 'Войти' : 'Зарегистрироваться'; }
         authBtn.onclick = () => {
-            let login = authLogin.value.trim();
-            let pass = authPass.value.trim();
-            if (!login || !pass) { authMsg.innerText = '❌ Заполните все поля'; authMsg.className = 'auth-message error'; return; }
+            let l = authLogin.value.trim(), p = authPass.value.trim();
+            if (!l || !p) { authMsg.innerText = '❌ Заполните все поля'; authMsg.className = 'auth-message error'; return; }
             if (isRegisterMode) {
-                let res = registerUser(login, pass);
-                authMsg.innerText = res.message;
-                authMsg.className = `auth-message ${res.success ? 'success' : 'error'}`;
+                let res = register(l, p);
+                authMsg.innerText = res.message; authMsg.className = `auth-message ${res.success ? 'success' : 'error'}`;
                 if (res.success) { authLogin.value = ''; authPass.value = ''; isRegisterMode = false; updateAuthUI(); }
             } else {
-                let res = loginUser(login, pass);
+                let res = login(l, p);
                 if (res.success) initApp();
                 else { authMsg.innerText = res.message; authMsg.className = 'auth-message error'; }
             }
         };
-
         document.getElementById('toggleMode').onclick = () => { isRegisterMode = !isRegisterMode; updateAuthUI(); authMsg.innerText = ''; };
         if (checkAuth()) initApp();
 
-        // ============================================================
-        // МОДАЛКИ
-        // ============================================================
-        // Заметки
+        // ==================== МОДАЛКИ ====================
         document.getElementById('addNoteBtn').onclick = () => document.getElementById('noteModal').classList.add('active');
-        document.getElementById('saveNoteBtn').onclick = () => {
-            let t = document.getElementById('noteTitle').value;
-            let c = document.getElementById('noteContent').value;
-            if (t && c) { addNote(t, c); document.getElementById('noteModal').classList.remove('active'); document.getElementById('noteTitle').value = ''; document.getElementById('noteContent').value = ''; }
-            else alert('Заполните заголовок и текст');
-        };
+        document.getElementById('saveNoteBtn').onclick = () => { let t = document.getElementById('noteTitle').value, c = document.getElementById('noteContent').value; if (t && c) { addNote(t, c); document.getElementById('noteModal').classList.remove('active'); document.getElementById('noteTitle').value = ''; document.getElementById('noteContent').value = ''; } else alert('Заполните поля'); };
         document.getElementById('cancelNoteBtn').onclick = () => document.getElementById('noteModal').classList.remove('active');
 
-        // Музыка
         document.getElementById('addMusicBtn').onclick = () => document.getElementById('musicModal').classList.add('active');
-        document.getElementById('saveMusicBtn').onclick = () => {
-            let file = document.getElementById('musicFile').files[0];
-            let title = document.getElementById('musicTitle').value;
-            let artist = document.getElementById('musicArtist').value;
-            if (file && title) { addMusicTrack(file, title, artist); document.getElementById('musicModal').classList.remove('active'); document.getElementById('musicFile').value = ''; document.getElementById('musicTitle').value = ''; document.getElementById('musicArtist').value = ''; }
-            else alert('Выберите файл и введите название');
-        };
+        document.getElementById('saveMusicBtn').onclick = () => { let f = document.getElementById('musicFile').files[0], t = document.getElementById('musicTitle').value, a = document.getElementById('musicArtist').value; if (f && t) { addMusicTrack(f, t, a); document.getElementById('musicModal').classList.remove('active'); document.getElementById('musicFile').value = ''; document.getElementById('musicTitle').value = ''; document.getElementById('musicArtist').value = ''; } else alert('Выберите файл и название'); };
         document.getElementById('cancelMusicBtn').onclick = () => document.getElementById('musicModal').classList.remove('active');
 
-        // Shorts
         document.getElementById('addShortsBtn').onclick = () => document.getElementById('shortsModal').classList.add('active');
-        document.getElementById('saveShortsBtn').onclick = () => {
-            let file = document.getElementById('shortsFile').files[0];
-            let title = document.getElementById('shortsTitle').value;
-            let author = document.getElementById('shortsAuthor').value || currentUser;
-            let desc = document.getElementById('shortsDesc').value;
-            if (file && title) {
-                let reader = new FileReader();
-                reader.onload = e => {
-                    shorts.unshift({ id: Date.now(), title, author, desc, dataUrl: e.target.result });
-                    saveUserData(currentUser, 'shorts', shorts);
-                    renderShorts();
-                    alert('✅ Видео добавлено!');
-                };
-                reader.readAsDataURL(file);
-                document.getElementById('shortsModal').classList.remove('active');
-                document.getElementById('shortsFile').value = '';
-                document.getElementById('shortsTitle').value = '';
-                document.getElementById('shortsAuthor').value = '';
-                document.getElementById('shortsDesc').value = '';
-            } else alert('Выберите файл и введите название');
-        };
+        document.getElementById('saveShortsBtn').onclick = () => { let f = document.getElementById('shortsFile').files[0], t = document.getElementById('shortsTitle').value, a = document.getElementById('shortsAuthor').value || currentUser, d = document.getElementById('shortsDesc').value; if (f && t) { let r = new FileReader(); r.onload = e => { shorts.unshift({ id: Date.now(), title: t, author: a, desc: d, dataUrl: e.target.result }); saveUserData(currentUser, 'shorts', shorts); renderShorts(); alert('✅ Видео добавлено!'); }; r.readAsDataURL(f); document.getElementById('shortsModal').classList.remove('active'); document.getElementById('shortsFile').value = ''; document.getElementById('shortsTitle').value = ''; document.getElementById('shortsAuthor').value = ''; document.getElementById('shortsDesc').value = ''; } else alert('Выберите файл и название'); };
         document.getElementById('cancelShortsBtn').onclick = () => document.getElementById('shortsModal').classList.remove('active');
 
-        // Видео
         document.getElementById('addVideoBtn').onclick = () => document.getElementById('videoModal').classList.add('active');
-        document.getElementById('saveVideoBtn').onclick = () => {
-            let file = document.getElementById('videoFile').files[0];
-            let title = document.getElementById('videoTitle').value;
-            let author = document.getElementById('videoAuthor').value || currentUser;
-            let desc = document.getElementById('videoDesc').value;
-            if (file && title) {
-                let reader = new FileReader();
-                reader.onload = e => {
-                    videos.unshift({ id: Date.now(), title, author, desc, dataUrl: e.target.result });
-                    saveUserData(currentUser, 'videos', videos);
-                    renderVideos();
-                    alert('✅ Видео добавлено!');
-                };
-                reader.readAsDataURL(file);
-                document.getElementById('videoModal').classList.remove('active');
-                document.getElementById('videoFile').value = '';
-                document.getElementById('videoTitle').value = '';
-                document.getElementById('videoAuthor').value = '';
-                document.getElementById('videoDesc').value = '';
-            } else alert('Выберите файл и введите название');
-        };
+        document.getElementById('saveVideoBtn').onclick = () => { let f = document.getElementById('videoFile').files[0], t = document.getElementById('videoTitle').value, a = document.getElementById('videoAuthor').value || currentUser, d = document.getElementById('videoDesc').value; if (f && t) { let r = new FileReader(); r.onload = e => { videos.unshift({ id: Date.now(), title: t, author: a, desc: d, dataUrl: e.target.result }); saveUserData(currentUser, 'videos', videos); renderVideos(); alert('✅ Видео добавлено!'); }; r.readAsDataURL(f); document.getElementById('videoModal').classList.remove('active'); document.getElementById('videoFile').value = ''; document.getElementById('videoTitle').value = ''; document.getElementById('videoAuthor').value = ''; document.getElementById('videoDesc').value = ''; } else alert('Выберите файл и название'); };
         document.getElementById('cancelVideoBtn').onclick = () => document.getElementById('videoModal').classList.remove('active');
 
-        // Выход
-        document.getElementById('logoutBtn').onclick = () => { logoutUser(); location.reload(); };
+        document.getElementById('logoutBtn').onclick = () => { logout(); location.reload(); };
 
-        // Переключение модулей
         document.querySelectorAll('.nav-btn').forEach(btn => {
             btn.onclick = () => {
                 document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
                 let mod = btn.dataset.module;
-                ['chat', 'browser', 'shorts', 'video', 'notes', 'music', 'messenger'].forEach(m => {
-                    let el = document.getElementById(`${m}-module`);
-                    if (el) el.classList.add('hidden');
-                });
-                let active = document.getElementById(`${mod}-module`);
-                if (active) active.classList.remove('hidden');
+                ['chat', 'browser', 'shorts', 'video', 'notes', 'music', 'messenger'].forEach(m => document.getElementById(`${m}-module`).classList.add('hidden'));
+                document.getElementById(`${mod}-module`).classList.remove('hidden');
                 if (mod === 'shorts') renderShorts();
                 if (mod === 'video') renderVideos();
                 if (mod === 'notes') renderNotes();
@@ -1519,10 +1055,7 @@
             };
         });
 
-        // Закрытие модалок по клику вне
-        window.onclick = e => {
-            if (e.target.classList && e.target.classList.contains('modal')) e.target.classList.remove('active');
-        };
+        window.onclick = e => { if (e.target.classList && e.target.classList.contains('modal')) e.target.classList.remove('active'); };
     </script>
 </body>
 </html>
